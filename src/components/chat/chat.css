@@ -1,0 +1,103 @@
+.chatWrapper {
+    width: 50%;
+    min-width: 500px;
+    height: 100%;
+    display: flex;
+}
+
+.chatInnerContainer {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-flow: column;
+}
+
+.chatHeader {
+    justify-content: space-between;
+    margin: 5px;
+    display: flex;
+}
+
+.chatEventsWrapper {
+    display: flex;
+    flex-flow: column;
+    flex-grow: 1;
+    align-items: center;
+    overflow: auto;
+}
+
+.messageInputWrapper {
+    height: 100px;
+    justify-content: space-between;
+    display: flex;
+    margin: 5px;
+}
+
+.chatEventsWrapper, .messageInputWrapper {
+    margin: 5px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+}
+.messageInput {
+    width: 95%;
+    height: 85%;
+    margin: 5px;
+    outline: none;
+    background: none;
+    border: none;
+    resize: none;
+}
+
+.ownMessage {
+    justify-content: flex-end;
+}
+
+.othersMessage {
+    justify-content: flex-start;
+}
+
+.ownMessage, .othersMessage {
+    display: flex;
+    width: 100%;
+}
+
+.ownMessage .chatEvent {
+    background: rgba(31, 200, 219, 0.2);
+}
+
+.othersMessage .chatEvent {
+    background: rgba(31, 200, 219, 0.65);
+}
+
+.chatEvent {
+    display: flex;
+    flex-flow: column;
+    max-width: 66%;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.joinedEventWrapper, .leftEventWrapper {
+    margin: 2px;
+    padding: 2px;
+}
+
+.joinedEventWrapper, .leftEventWrapper, .chatEvent {
+    font-size: 13px;
+}
+
+.joinedEventWrapper, .leftEventWrapper {
+    font-weight: bold;
+}
+
+.joinedEventWrapper {
+    color: green;
+}
+
+.leftEventWrapper {
+    color: indianred;
+}
+
