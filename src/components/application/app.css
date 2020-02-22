@@ -28,6 +28,13 @@
   margin: 10px;
 }
 
+.nicknameDuplicatedError {
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 13px;
+  color: red;
+  padding: 5px;
+}
+
 .chatsWrapper {
   display: flex;
   flex-grow: 1;

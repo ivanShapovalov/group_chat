@@ -49,7 +49,7 @@ export class AddParticipant extends React.Component<Props, State> {
         />
 
         <button disabled={ nicknameAlreadyTaken } onClick={ this.addParticipant } > Add </button>
-        { nicknameAlreadyTaken && <div>this nickname is already taken</div>}
+        { nicknameAlreadyTaken && <div className="nicknameDuplicatedError">This nickname is already taken</div>}
       </div>
     );
   }
