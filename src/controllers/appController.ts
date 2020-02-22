@@ -12,17 +12,6 @@ export class AppController {
     private getState: () => AppState,
     private updateState: (appState: AppState) => void
   ) {
-    // setTimeout(
-    //   () => this.processEventData(ChatEventConverter.eventToApiObject(ParticipantJoinedEvent.new('me'))), 2000
-    // );
-    //
-    // let i = 0;
-    // setInterval(
-    //   () => {
-    //     this.processEventData(ChatEventConverter.eventToApiObject(MessagePostedEvent.new('me', 'text ' + i)));
-    //     i++;
-    //   }, 5000
-    // );
   }
 
   subscribeToChatEvents = () => {
